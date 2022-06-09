@@ -1,5 +1,5 @@
 // Make the pop and shift buttons work as well
-const myEmojis = []
+const myEmojis = ["😂", "🐶", "👬", "🎧"]
 const emojiContainer = document.getElementById("emoji-container")
 const emojiInput = document.getElementById("emoji-input")
 const pushBtn = document.getElementById("push-btn")
@@ -16,6 +16,7 @@ function renderEmojis() {
     }
 }
 
+renderEmojis()
 
 pushBtn.addEventListener("click", function(){
     if (emojiInput.value) { //It ckecks if there's a character, if not, nothing happens
